@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<head>
+  <title>Andrew Mondt Technical Blog</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="blog-stylesheet.css">
+</head>
+<header>
+  Welcome to Andrew Mondt's Technical Blog
+</header>
+
+<main>
+  
+  <h4>5,10,15</h4>
+  <h1>It's all about the class!</h1>
+  <p>Up until now I’ve been writing my programs using methods. Remember a method is something that access the data you send to it. However things aren’t always that easy. Sometimes you need to have your data handled in a complex way often repeatedly from different parts of your main program. To do that we create a class.    
+  </p> 
+  <p>A class is often a series of methods and or data. A class is like a program in its own sandbox. You can access that sandbox and what happens to your data stays in that sandbox regardless of what else is going on in your program. You need to tell the class specifically what variables and data are to stay in that sandbox. These are called instance variables. You can tell it is an instance variable by the “@“ in front of that variable”s name. You can also have instance methods as well. You can call to an instance method from anywhere in your program. The results you get are based on the instance methods in that class. You can have instance variables and classes send out information to the main program. Once the information has been sent out it can be modified outside of the class without modifying the data as it was stored in the class. Classes help you keep everything in order. Here is a simple example of a class. (It won’t run in the real world).
+  <p>
+  class Example   (breed)      ————— The name of the class.
+   def initialize (doggy)                                      —————- creates the instance variable
+  @doggy = breed
+   end
+   def doggy_bread                                     ——————-an instance method
+  puts @doggy
+   end
+ end
+<p>By using the code above we are sending the variable breed to the class Example. Whatever we do in the class will modify our variable @doggy without modifying the variable breed. However we can send the variable @doggy to be modified elsewhere in the program without modifying the @doggy in the class. It helps the program keep everything tidy and kept where it can easily be modified without losing its original value.
+</p>
+    
+</main>
+
